@@ -2,23 +2,34 @@ html {
     background-image: url("resources/pics/background.jpg");
 }
 
-head {
-    text-align: center;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-img {
-    display: block;
+header > img {
+    display: inline-block;
     margin: auto;
-    border: 1px solid;
     border-color: black;
     border-radius: 100%;
+    box-shadow: gray 0px 2px 20px 0px;
+    width: 13em;
+    height: 13em;
+    padding: 15px;
 }
 
-header {
-    text-align: center;
+header > h1 {
+    display: inline-block;
+    color: #423f3e;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 1em;
+    font-size: 1.5em;
+    padding: 0.1em 0.2em
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     color: black;
 }
 
@@ -28,4 +39,30 @@ ul {
     margin-right: auto;
     padding: 0;
     list-style: none;
+}
+
+ul > li {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 2.5em;
+    border-radius: 1em;
+    padding: 0.2em 3em;
+}
+
+ul > li > img {
+    position: relative;
+    top: 6px;
+    right: 12px;
+    width: 60px;
+    height: 60px;
+}
+
+ul > li > a {
+    position: relative;
+    bottom: 11px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
 }
